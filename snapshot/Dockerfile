@@ -8,10 +8,10 @@ RUN echo 'deb [arch=amd64] http://emacs.secretsauce.net unstable main' \
 
 RUN apt-get update \
 	&& apt-get install -y --no-install-recommends \
-		emacs-snapshot-nox=2:20150705+emacs-24.5-rc3-fixed-5282-g044d4cc-1 \
+		emacs-snapshot-nox=2:20150920+emacs-24.5-rc3-fixed-5952-g00a65e3-1 \
 	&& rm -rf /var/lib/apt/lists/*
 
-ENV CASK_VERSION ea92ba11bc2d8cdc3fc2df92a6c762f9890db794
+ENV CASK_VERSION 8337237449446e186ccd5ade0b0dc8c6ea7bd728
 
 RUN mkdir /opt/cask \
 	&& curl -sSL https://github.com/cask/cask/archive/$CASK_VERSION.tar.gz \

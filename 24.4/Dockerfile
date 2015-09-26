@@ -23,7 +23,7 @@ RUN mkdir -p /usr/src/emacs \
 
 ENV PATH /opt/emacs/bin:$PATH
 
-ENV CASK_VERSION ea92ba11bc2d8cdc3fc2df92a6c762f9890db794
+ENV CASK_VERSION 8337237449446e186ccd5ade0b0dc8c6ea7bd728
 
 RUN mkdir /opt/cask \
 	&& curl -sSL https://github.com/cask/cask/archive/$CASK_VERSION.tar.gz \
