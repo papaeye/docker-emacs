@@ -1,4 +1,4 @@
-FROM buildpack-deps:jessie
+FROM buildpack-deps:sid
 MAINTAINER papaeye@gmail.com
 
 RUN curl -sSL http://emacs.secretsauce.net/key.gpg | apt-key add -
